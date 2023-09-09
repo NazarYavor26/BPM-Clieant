@@ -4,14 +4,29 @@ import { BrowserModule } from '@angular/platform-browser';
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
+import { LoginComponent } from './authorization/components/login/login.component';
+import { AuthResetPasswordComponent } from './authorization/components/auth-reset-password/auth-reset-password.component';
+import { AuthChangePasswordComponent } from './authorization/components/auth-change-password/auth-change-password.component';
+import { DashboardComponent } from './project/components/dashboard/dashboard.component';
+import { RouterModule, Routes } from '@angular/router';
+
+const routes:Routes = [
+  { path:'', component:DashboardComponent },
+  { path:'dashboard', component:DashboardComponent },
+  { path:'login', component:LoginComponent }
+]
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    LoginComponent,
+    AuthResetPasswordComponent,
+    AuthChangePasswordComponent,
+    DashboardComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule,
+    RouterModule.forRoot(routes),
     BrowserAnimationsModule
   ],
   providers: [],
