@@ -1,5 +1,11 @@
 @import url(https://fonts.googleapis.com/css?family=Roboto:300);
 
+:host {
+  display: block;
+  background: linear-gradient(to right, #1a171d, #605c64);
+  height: 100vh;
+}
+
 .login-page {
   width: 800px;
   padding: 8% 0 0;
@@ -11,7 +17,7 @@
   background: #FFFFFF;
   max-width: 800px;
   margin: 0 auto 100px;
-  padding: 45px;
+  padding: 65px 45px;
   text-align: center;
   box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
   border-radius: 10px;
