@@ -9,9 +9,10 @@ import { AuthResetPasswordComponent } from './authorization/components/auth-rese
 import { AuthChangePasswordComponent } from './authorization/components/auth-change-password/auth-change-password.component';
 import { DashboardComponent } from './project/components/dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
+import { BpmLayoutComponent } from './project/components/bpm-layout/bpm-layout.component';
 
 const routes:Routes = [
-  { path:'', component:DashboardComponent },
+  { path:'', component:BpmLayoutComponent },
   { path:'dashboard', component:DashboardComponent },
   { path:'login', component:LoginComponent }
 ]
@@ -22,7 +23,8 @@ const routes:Routes = [
     LoginComponent,
     AuthResetPasswordComponent,
     AuthChangePasswordComponent,
-    DashboardComponent
+    DashboardComponent,
+    BpmLayoutComponent
   ],
   imports: [
     BrowserModule,
