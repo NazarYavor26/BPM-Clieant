@@ -10,6 +10,12 @@ import { AuthChangePasswordComponent } from './authorization/components/auth-cha
 import { DashboardComponent } from './project/components/dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
 import { BpmLayoutComponent } from './project/components/bpm-layout/bpm-layout.component';
+import { HomeComponent } from './project/components/home/home.component';
+import { SettingsComponent } from './project/components/settings/settings.component';
+import { MessagesComponent } from './project/components/messages/messages.component';
+import { ToolsComponent } from './project/components/tools/tools.component';
+import { PeopleComponent } from './project/components/people/people.component';
+import { ProfileComponent } from './project/components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +24,13 @@ import { BpmLayoutComponent } from './project/components/bpm-layout/bpm-layout.c
     AuthResetPasswordComponent,
     AuthChangePasswordComponent,
     DashboardComponent,
-    BpmLayoutComponent
+    BpmLayoutComponent,
+    HomeComponent,
+    SettingsComponent,
+    MessagesComponent,
+    ToolsComponent,
+    PeopleComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
