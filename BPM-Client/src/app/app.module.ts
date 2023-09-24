@@ -11,12 +11,6 @@ import { DashboardComponent } from './project/components/dashboard/dashboard.com
 import { RouterModule, Routes } from '@angular/router';
 import { BpmLayoutComponent } from './project/components/bpm-layout/bpm-layout.component';
 
-const routes:Routes = [
-  { path:'', component:BpmLayoutComponent },
-  { path:'dashboard', component:DashboardComponent },
-  { path:'login', component:LoginComponent }
-]
-
 @NgModule({
   declarations: [
     AppComponent,
@@ -28,8 +22,8 @@ const routes:Routes = [
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
