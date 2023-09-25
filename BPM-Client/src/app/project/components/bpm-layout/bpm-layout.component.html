@@ -2,20 +2,20 @@
 
      <div class="sidebar" [ngClass]="{active : isMenuOpen, inactive: !isMenuOpen}">
             <div class="top-sidebar-container">
-                <div class="logo">BPM</div>
+                <a class="logo" routerLink="/">BPM</a>
             <div class="menu-arrov-close" (click)="toggle()"></div>
         </div>
         <div class="sidebar-items">
             <div class="top-sidebar-items">
                 <ul>
-                    <li>
+                    <!-- <li>
                         <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <span class="home-icon sidebar-icon"></span>
                             <span class="item">Home</span>
                         </a>
-                    </li>
+                    </li> -->
                     <li>
-                        <a routerLink="/dashboard" routerLinkActive="active">
+                        <a routerLink="/" routerLinkActive="active" [routerLinkActiveOptions]="{exact: true}">
                             <span class="dashboard-icon sidebar-icon"></span>
                             <span class="item">Dashboard</span>
                         </a>
