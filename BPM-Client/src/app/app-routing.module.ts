@@ -11,9 +11,9 @@ import { MessagesComponent } from './project/components/messages/messages.compon
 import { PeopleComponent } from './project/components/people/people.component';
 
 const routes: Routes = [
-  { path:'', component:BpmLayoutComponent, children: [ 
-    { path: "", component:DashboardComponent},
-    { path: "home", component:HomeComponent},
+  { path:"", component:BpmLayoutComponent, children: [ 
+    { path: "", component:HomeComponent},
+    // { path: "home", component:HomeComponent},
     { path: "dashboard", component:DashboardComponent},
     { path: "people", component:PeopleComponent},
     { path: "messages", component:MessagesComponent},
