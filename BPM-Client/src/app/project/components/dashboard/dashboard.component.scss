@@ -1,5 +1,68 @@
-p {
-    font-size: 30px;
-    margin: 100px;
-    font-weight: 400;
+.container {
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    grid-template-areas: 
+    "c1 c2 c3 c4"
+    "c5 c5 c6 c6"
+    "c5 c5 c8 c9"
+    "c7 c7 c8 c9";
+    gap: 25px;
+}
+
+.card {
+    background-color: #D9D9D9;
+    background: url(../../../../assets/card-tmp-back.JPG) no-repeat;
+    background-size: cover;
+    color: #24272C;
+
+    //border: 3px solid #24272C;
+    border-radius: 15px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 20px;
+    font-weight: bold;
+
+    &:hover {
+        cursor: pointer;
+    }
+}
+
+.card:nth-child(1) {
+    grid-area: c1;
+}
+
+.card:nth-child(2) {
+    grid-area: c2;
+}
+
+.card:nth-child(3) {
+    grid-area: c3;
+}
+
+.card:nth-child(4) {
+    grid-area: c4;
+}
+
+.card:nth-child(5) {
+    grid-area: c5;
+}
+
+.card:nth-child(6) {
+    grid-area: c6;
+}
+
+.card:nth-child(7) {
+    grid-area: c7;
+}
+
+.card:nth-child(8) {
+    grid-area: c8;
+}
+
+.card:nth-child(9) {
+    grid-area: c9;
 }

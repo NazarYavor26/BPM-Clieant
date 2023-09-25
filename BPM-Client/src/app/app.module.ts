@@ -9,12 +9,13 @@ import { AuthResetPasswordComponent } from './authorization/components/auth-rese
 import { AuthChangePasswordComponent } from './authorization/components/auth-change-password/auth-change-password.component';
 import { DashboardComponent } from './project/components/dashboard/dashboard.component';
 import { RouterModule, Routes } from '@angular/router';
-
-const routes:Routes = [
-  { path:'', component:DashboardComponent },
-  { path:'dashboard', component:DashboardComponent },
-  { path:'login', component:LoginComponent }
-]
+import { BpmLayoutComponent } from './project/components/bpm-layout/bpm-layout.component';
+import { HomeComponent } from './project/components/home/home.component';
+import { SettingsComponent } from './project/components/settings/settings.component';
+import { MessagesComponent } from './project/components/messages/messages.component';
+import { ToolsComponent } from './project/components/tools/tools.component';
+import { PeopleComponent } from './project/components/people/people.component';
+import { ProfileComponent } from './project/components/profile/profile.component';
 
 @NgModule({
   declarations: [
@@ -22,12 +23,19 @@ const routes:Routes = [
     LoginComponent,
     AuthResetPasswordComponent,
     AuthChangePasswordComponent,
-    DashboardComponent
+    DashboardComponent,
+    BpmLayoutComponent,
+    HomeComponent,
+    SettingsComponent,
+    MessagesComponent,
+    ToolsComponent,
+    PeopleComponent,
+    ProfileComponent
   ],
   imports: [
     BrowserModule,
-    RouterModule.forRoot(routes),
-    BrowserAnimationsModule
+    BrowserAnimationsModule,
+    AppRoutingModule
   ],
   providers: [],
   bootstrap: [AppComponent]
